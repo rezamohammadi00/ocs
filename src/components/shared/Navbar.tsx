@@ -27,7 +27,6 @@ export const Navbar = () => {
                   alt="logo"
                   width={93}
                   height={24}
-                  className="hidden md:block"
                 />
               </Link>
               <Link href={ROUTES.home}>
