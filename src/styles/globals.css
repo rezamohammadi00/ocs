@@ -1,13 +1,64 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #fff;
-  --color-foreground: #3a4352;
+  --border-info: #016596;
+  --border-disabled: #e2e8f0;
 
-  --color-primary: #016596;
-  --color-primary-foreground: #dff3ff;
+  --action-disabled-bg: #e2e8f0;
+  --action-disabled-text: #94a3b8;
 
-  --color-secondary: #3a4352;
-  --color-secondary-foreground: #eceef2;
+  /* Primary */
+  --action-primary-solid-bg: #016596;
+  --action-primary-solid-hover: #074e73;
+  --action-primary-solid-text: #dff3ff;
+  --action-primary-light-bg: #dff3ff;
+  --action-primary-light-bg-hover: #b7e8ff;
+  --action-primary-light-text: #016596;
+  --action-primary-outline-solid-border: #016596;
+  --action-primary-outline-solid-border-hover: #016596;
+  --action-primary-outline-solid-text: #016596;
+  --action-primary-outline-solid-text-hover: #dff3ff;
+  --action-primary-outline-light-border: #b7e8ff;
+  --action-primary-outline-light-border-hover: #b7e8ff; /* assumed */
+  --action-primary-outline-light-text: #016596;
+
+  /* Secondary */
+  --action-secondary-solid-bg: #3a4352;
+  --action-secondary-solid-hover: #343a46;
+  --action-secondary-solid-text: #eceef2;
+  --action-secondary-light-bg: #eceef2;
+  --action-secondary-light-bg-hover: #f1f5f9;
+  --action-secondary-light-text: #343a46;
+  --action-secondary-outline-solid-border: #3a4352;
+  --action-secondary-outline-solid-border-hover: #3a4352;
+  --action-secondary-outline-solid-text: #343a46;
+  --action-secondary-outline-solid-text-hover: #eceef2;
+  --action-secondary-outline-light-border: #eceef2; /* assumed */
+  --action-secondary-outline-light-border-hover: #eceef2; /* assumed */
+  --action-secondary-outline-light-text: #343a46; /* assumed */
+
+  /* Destructive */
+  --action-destructive-solid-bg: #ef4444;
+  --action-destructive-solid-hover: #b91c1c;
+  --action-destructive-solid-text: #fee2e2;
+  --action-destructive-light-bg: #fef2f2;
+  --action-destructive-light-bg-hover: #fee2e2;
+  --action-destructive-light-text: #ef4444;
+  --action-destructive-outline-solid-border: #ef4444;
+  --action-destructive-outline-solid-border-hover: #ef4444;
+  --action-destructive-outline-solid-text: #ef4444;
+  --action-destructive-outline-solid-text-hover: #fee2e2;
+  --action-destructive-outline-light-border: #fee2e2;
+  --action-destructive-outline-light-border-hover: #fee2e2;
+  --action-destructive-outline-light-text: #ef4444;
+  --action-destructive-outline-light-text-hover: #ef4444;
+
+  /* White */
+  --action-white-solid-bg: #ffffff;
+  --action-white-solid-hover: #f6f7f9;
+  --action-white-solid-text: #3a4352;
+  --action-white-outline-solid-border: #ffffff;
+  --action-white-outline-solid-border-hover: #f6f7f9;
+  --action-white-outline-solid-text: #ffffff;
+  --action-white-outline-solid-text-hover: #d5dae2;
 }
- 
