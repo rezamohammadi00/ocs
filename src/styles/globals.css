@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme inline {
+  /* Font Poppins */
+  --font-poppins: var(--font-poppins), sans-serif;
+
   --border-info: #016596;
   --border-disabled: #e2e8f0;
 
@@ -61,4 +64,6 @@
   --action-white-outline-solid-border-hover: #f6f7f9;
   --action-white-outline-solid-text: #ffffff;
   --action-white-outline-solid-text-hover: #d5dae2;
+
+  --landing-section-little-text: #64748b;
 }
