@@ -1,24 +1,32 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 //GLOBAL
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { cn } from "@/lib/utils";
 import { COPY } from "@/lib/copy";
 import Tag from "@/components/ui/Tag";
+import { useAutoTab } from "@/hooks/useAutoTab";
 
 const sliderThumbShapeExact = `h-[74px] w-28 bg-white
     [clip-path:path('M0_74V12C0_8.309_2.898_5.268_6.584_5.09L100.014_0.579C106.538_0.264_112_5.468_112_12V74H0Z')]`;
 
 const { heroTabs, mainSlider } = COPY;
+const tabIds = heroTabs.map((t) => t.id);
 
 export const SliderSection = () => {
-  const [activeId, setActiveId] = useState<string>(mainSlider.defaultTabId);
+  const { activeId, setActiveId, hoverProps } = useAutoTab({
+    ids: tabIds,
+    defaultId: mainSlider.defaultTabId,
+    interval: 3000,
+  });
 
   return (
-    <section className="mt-12 bg-linear-to-b from-white to-(--action-primary-light-bg) relative">
+    <section
+      {...hoverProps}
+      className="mt-12 bg-linear-to-b from-white to-(--action-primary-light-bg) relative"
+    >
       <Container>
         <div className="flex justify-between">
           {/* right */}
@@ -32,8 +40,10 @@ export const SliderSection = () => {
                     key={t.id}
                     aria-hidden={!selected}
                     className={cn(
-                      "col-start-1 row-start-1",
-                      !selected && "invisible pointer-events-none",
+                      "col-start-1 row-start-1 transition-all duration-500 ease-out",
+                      selected
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 translate-y-2 pointer-events-none",
                     )}
                   >
                     <p className="text-(--saffron-500) font-bold text-xl">
@@ -81,7 +91,7 @@ export const SliderSection = () => {
                     onClick={() => setActiveId(t.id)}
                     className={cn(
                       sliderThumbShapeExact,
-                      "cursor-pointer transition-all duration-200 text-(--landing-section-little-text)",
+                      "cursor-pointer transition-all duration-300 ease-out text-(--landing-section-little-text)",
                       selected &&
                         "bg-(--action-primary-solid-bg) text-(--action-primary-outline-light-border) -mt-6",
                     )}
@@ -106,8 +116,10 @@ export const SliderSection = () => {
                   sizes="761px"
                   priority={t.id === mainSlider.defaultTabId}
                   className={cn(
-                    "object-contain transition-opacity duration-200",
-                    t.id === activeId ? "opacity-100" : "opacity-0",
+                    "object-contain transition-all duration-500 ease-out",
+                    t.id === activeId
+                      ? "opacity-100 scale-100"
+                      : "opacity-0 scale-[0.98]",
                   )}
                 />
               ))}
