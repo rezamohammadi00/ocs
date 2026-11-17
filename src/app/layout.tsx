@@ -1,7 +1,7 @@
-import "@/styles/globals.css";
-import { peydaFont, poppinsFont } from "@/lib/fonts";
 import type { Metadata } from "next";
 import { cn } from "@/lib/utils";
+import { peydaFont, poppinsFont } from "@/lib/fonts";
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: "بازرگانی اصولی شجاعی",
