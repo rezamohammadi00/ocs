@@ -278,4 +278,40 @@ export const COPY = {
       },
     ],
   },
+  footer: {
+    logoAlt: "logo",
+    companyName: "شرکت بازرگانی اصولی شجاعی",
+    companyDescription:
+      "واردات و صادرات کالا • ترخیص مستقل • گمرکات سرزمین اصلی و مناطق آزاد • مسیر ترکیبی خدمات",
+    newsletter: {
+      title: "عضویت در خبرنامه",
+      placeholder: "ایمیل خود را وارد کنید",
+    },
+    links: [
+      { label: "> صفحه اصلی", href: "#" },
+      { label: "خودرو‌های سواری", href: "/services/cars" },
+      { label: "کشنده و کامیون", href: "/services/trucks" },
+      { label: "حمل و نقل", href: "/services/freight" },
+      { label: "واردات، صادرات و ترخیص", href: "/services/import-export" },
+      { label: "انبارداری و سردخانه گمرکی", href: "/services/storage" },
+      { label: "ثبت سفارش و امور ارزی", href: "/services/orders" },
+    ],
+    contacts: [
+      { id: "email", name: "پست الکترونیک", value: "info@osoulicustoms.com" },
+      { id: "phone", name: "تلفن تماس", value: "021-44454567" },
+      {
+        id: "address",
+        name: "آدرس",
+        value: "تهران، جردن، ناهید غربی، گروه اصولی",
+      },
+    ],
+    socials: [
+      { id: "telegram", href: "#" },
+      { id: "whatsapp", href: "#" },
+      { id: "instagram", href: "#" },
+    ],
+    brandWatermark: "OSULI CUSTOMS SERVICES",
+    tagline: "همراه شما در مسیر تجارت جهانی",
+    copyright: "© ۲۰۲۶ - تمامی حقوق برای شرکت بازرگانی اصولی شجاعی محفوظ است.",
+  },
 } as const;

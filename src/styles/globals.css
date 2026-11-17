@@ -68,8 +68,14 @@
   --landing-section-little-text: #64748b;
 
   --neutral-app-950: #23272e;
+  --neutral-app-900: #343a46;
   --neutral-app-400: #8695aa;
+  --neutral-app-600: #526077;
+  --neutral-app-300: #b1bac8;
+  --neutral-app-50: #f6f7f9;
+
   --text-inverse: #f8fafc;
   --bahama-blue-50: #eff9ff;
   --bahama-blue-400: #2fc3ff;
+  --saffron-500: #f0a510;
 }

@@ -1,4 +1,6 @@
+//Global Imports
 import { cn } from "@/lib/utils";
+import { TinyLine } from "@/components/TinyLine";
 
 export const TitleWithDesc = ({
   title,
@@ -14,7 +16,7 @@ export const TitleWithDesc = ({
       <p className="text-2xl font-bold text-(--action-primary-light-text)">
         {title}
       </p>
-      <span className="block h-1 w-6 rounded-full bg-linear-to-r from-[#F0A510]/0 to-[#F0A510]"></span>
+      <TinyLine />
       <p className="text-center text-base text-(--landing-section-little-text)">
         {desc}
       </p>
