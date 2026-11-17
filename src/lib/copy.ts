@@ -242,6 +242,20 @@ export const COPY = {
             imageSrc: "/images/cars/3.png",
             href: "#",
           },
+          {
+            id: "daf-xf480",
+            title: "DAF XF ۴۸۰",
+            price: "۹,۵۰۰,۰۰۰,۰۰۰",
+            imageSrc: "/images/cars/1.png",
+            href: "#",
+          },
+          {
+            id: "daf-xf480",
+            title: "DAF XF ۴۸۰",
+            price: "۹,۵۰۰,۰۰۰,۰۰۰",
+            imageSrc: "/images/cars/1.png",
+            href: "#",
+          },
         ],
       },
       {

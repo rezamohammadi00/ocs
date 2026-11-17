@@ -5,6 +5,7 @@ import { TitleWithDesc } from "@/components/TitleWithDesc";
 import { Container } from "@/components/ui/Container";
 import { cn } from "@/lib/utils";
 import { COPY } from "@/lib/copy";
+import { Scroller } from "@/components/Scroller";
 
 const shadowShape = `relative isolate h-8 w-[1280px] overflow-hidden
     before:absolute before:inset-x-0 before:top-[-10.4px] before:-z-10 before:h-8
@@ -36,7 +37,8 @@ export const PricesSection = () => {
                     bgTextUrl={group.card.bgTextUrl}
                     arrowImage={group.card.arrowImage}
                   />
-                  <div className="flex min-w-0 flex-1 gap-2 overflow-x-hidden">
+
+                  <Scroller>
                     {group.items.map((item) => (
                       <PriceCard
                         key={item.id}
@@ -46,7 +48,7 @@ export const PricesSection = () => {
                         hrefLink={item.href}
                       />
                     ))}
-                  </div>
+                  </Scroller>
                 </div>
               </div>
             ))}
