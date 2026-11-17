@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CallOutgoing, Home3, LoginCurve } from "iconsax-reactjs";
 //Global Imports
 import { ROUTES } from "@/lib/routes";
+import { COPY } from "@/lib/copy";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 
@@ -13,6 +14,8 @@ const navShape = `relative isolate h-16
     before:shadow-[0_10px_15px_rgb(15_23_42/0.1),0_4px_6px_rgb(15_23_42/0.05)]`;
 
 export const Navbar = () => {
+  const { navbar } = COPY;
+
   return (
     <div className="w-full h-28 flex justify-center items-center">
       <Container>
@@ -24,7 +27,7 @@ export const Navbar = () => {
               <Link href={ROUTES.home}>
                 <Image
                   src="/images/Logo.png"
-                  alt="logo"
+                  alt={navbar.logoAlt}
                   width={93}
                   height={24}
                 />
@@ -36,7 +39,7 @@ export const Navbar = () => {
                   appearance="text"
                   startIcon={<Home3 size="16" />}
                 >
-                  خانه
+                  {navbar.home}
                 </Button>
               </Link>
             </div>
@@ -48,7 +51,7 @@ export const Navbar = () => {
                 appearance="text"
                 startIcon={<CallOutgoing size="16" />}
               >
-                مشاوره
+                {navbar.consult}
               </Button>
               <Button
                 variant="secondary"
@@ -56,7 +59,7 @@ export const Navbar = () => {
                 appearance="outlined"
                 startIcon={<LoginCurve size="16" />}
               >
-                ورود | ثبت نام
+                {navbar.auth}
               </Button>
             </div>
           </div>

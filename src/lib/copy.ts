@@ -1,4 +1,10 @@
 export const COPY = {
+  navbar: {
+    logoAlt: "logo",
+    home: "خانه",
+    consult: "مشاوره",
+    auth: "ورود | ثبت نام",
+  },
   heroTabs: [
     {
       id: "customs",
@@ -43,6 +49,17 @@ export const COPY = {
       href: "/services/freight",
     },
   ],
+  services: {
+    title: "خدمات ما",
+    description:
+      "راهکارهای تخصصی برای بازرگانان، شرکت‌ها و صاحبان کالا؛ برآورد اولیه همان لحظه",
+  },
+  mainSlider: {
+    defaultTabId: "car",
+    heroAlt: "hero",
+    decorationImage: "/images/slider/vector.png",
+    cta: "مشاهده خدمات",
+  },
   stories: [
     {
       id: "currency",

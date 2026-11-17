@@ -4,7 +4,7 @@ import Link from "next/link";
 import { COPY } from "@/lib/copy";
 import { Container } from "@/components/ui/Container";
 
-export const StoriesContainer = () => {
+export const StoriesSection = () => {
   return (
     <section className="w-full">
       <Container>

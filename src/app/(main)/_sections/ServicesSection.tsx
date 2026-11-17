@@ -4,17 +4,19 @@ import { TitleWithDesc } from "@/components/TitleWithDesc";
 import { Container } from "@/components/ui/Container";
 import { COPY } from "@/lib/copy";
 
-export const Services = () => {
+const { services, serviceCards } = COPY;
+
+export const ServicesSection = () => {
   return (
     <div className="mt-10">
       <Container>
         <TitleWithDesc
           alignItems="items-center"
-          title="خدمات ما"
-          desc=" راهکارهای تخصصی برای بازرگانان، شرکت‌ها و صاحبان کالا؛ برآورد اولیه همان لحظه"
+          title={services.title}
+          desc={services.description}
         />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-          {COPY.serviceCards.map((card) => (
+          {serviceCards.map((card) => (
             <ServiceCard
               key={card.id}
               title={card.title}

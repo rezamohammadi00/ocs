@@ -1,15 +1,15 @@
 //Local Imports
-import { MainSlider } from "./MainSlider";
-import { StoriesContainer } from "./StoriesContainer";
-import { Services } from "./Services";
-import { PricesSection } from "./PricesSection";
+import { SliderSection } from "./_sections/SliderSection";
+import { StoriesSection } from "./_sections/StoriesSection";
+import { ServicesSection } from "./_sections/ServicesSection";
+import { PricesSection } from "./_sections/PricesSection";
 
 export default function HomePage() {
   return (
     <main>
-      <StoriesContainer />
-      <MainSlider />
-      <Services />
+      <StoriesSection />
+      <SliderSection />
+      <ServicesSection />
       <PricesSection />
     </main>
   );

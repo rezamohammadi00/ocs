@@ -6,12 +6,12 @@ export const peydaFont = localFont({
     {
       path: "../../public/fonts/Peyda-Regular[@fontbazi].ttf",
       weight: "400",
-      style: "normal", //✉️: font-normal
+      style: "normal",
     },
     {
       path: "../../public/fonts/Peyda-Bold[@fontbazi].ttf",
       weight: "700",
-      style: "normal", //✉️: font-bold
+      style: "normal",
     },
   ],
 });

@@ -43,14 +43,14 @@ export const CarCard = ({
       <div className="absolute bottom-13 left-2">
         <Image
           src={carImage}
-          alt="قیمت روز"
+          alt=""
           className="object-cover"
           width={115}
           height={60}
         />
         <Image
           src={arrowImage}
-          alt="قیمت روز"
+          alt=""
           className="object-cover mt-2"
           width={115}
           height={45}
@@ -60,7 +60,7 @@ export const CarCard = ({
       <div className="absolute -bottom-7 -right-7">
         <Image
           src={bgTextUrl}
-          alt="قیمت روز"
+          alt=""
           className="object-cover z-50"
           width={164}
           height={123}

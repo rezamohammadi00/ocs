@@ -8,7 +8,7 @@ import { COPY } from "@/lib/copy";
 
 const shadowShape = `relative isolate h-8 w-[1280px] overflow-hidden
     before:absolute before:inset-x-0 before:top-[-10.4px] before:-z-10 before:h-8
-    before:rounded-b-xl before:bg-[#EFF9FF] before:content-['']
+    before:rounded-b-xl before:bg-(--bahama-blue-50) before:content-['']
     before:-skew-y-[0.93deg]`;
 
 export const PricesSection = () => {
